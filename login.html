@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"/>
+	<style type="text/css">
+		@import url('https://fonts.googleapis.com/css?family=Gochi+Hand&display=swap');
+		@import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
+		.container{
+			border:1px solid grey;
+			border-radius: 5px;
+			width: 40%;
+		}
+		body{
+			font-family:  'Gochi Hand', cursive;
+		}
+		h1{
+			text-align: center;
+		}
+		.form-group{
+			display: flex;
+		}
+		#user {
+			padding: 10px;
+			padding-top: 10px;
+			border-radius: 5px 0px 0px 5px;
+			border-top: 1px  solid #ddd;
+			border-bottom: 1px solid #ddd;
+			border-left: 1px solid #ddd;
+		}
+		#lock{
+			padding: 10px;
+			padding-top: 10px;
+			border-radius: 5px 0px 0px 5px;
+			border-top: 1px  solid #ddd;
+			border-bottom: 1px solid #ddd;
+			border-left: 1px solid #ddd;
+		}
+		#eye{
+			padding: 10px;
+			padding-top: 10px;
+			border-radius: 0px 5px 5px 0px;
+			border-right: 1px solid #ddd;
+			border-top: 1px  solid #ddd;
+			border-bottom: 1px solid #ddd;
+		}
+		.form-control{
+			border-radius: 0px 5px 5px 0px;
+			border-left: none;
+		}
+		.form-control:focus {
+				box-shadow: none;
+		}
+		p{
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Login</h1>
+		<form action="/" method="POST">
+			<div class="form-group">
+			 <i id="user" class="fa fa-user"></i>
+			 <input class="form-control" type="email" name="email" placeholder="enter email">
+			</div>
+			<div class="form-group">
+				<i id="lock" class="fa fa-lock"></i><input class="form-control" style="border-radius: 0; border-right: none;" type="password" name="password" placeholder="enter password"><i id="eye" class="fa fa-eye"></i>			
+			</div>
+		
+		<button id="btn" type="submit" class="btn btn-primary btn-block mb-3" >Login</button>
+		<p>No account? <a href="/Register.html">Sign-up</a></p>
+	</div>
+</form>
+</body>
+</html>
